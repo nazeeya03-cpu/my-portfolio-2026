@@ -806,6 +806,214 @@ body.dark-mode .secondary-btn {
     transform: translateY(30px);
     transition: all 0.8s ease;
 }
+/* Modern Portfolio Design */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8faff;
+  color: #1e293b;
+  line-height: 1.7;
+}
+
+/* Navigation */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 2px 15px rgba(30, 41, 59, 0.08);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 6%;
+}
+
+.logo {
+  color: #2563eb;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #334155;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Home section */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 75px 8%;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.welcome {
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero h2 {
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.hero h2 span {
+  color: #2563eb;
+}
+
+.hero h3 {
+  font-size: 22px;
+}
+
+.hero p {
+  color: #64748b;
+}
+
+.hero-image {
+  flex: 0 1 300px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.2);
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+/* Project cards */
+.project-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px rgba(15, 23, 42, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.13);
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 35px 6%;
+}
+
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 45px 6%;
+    gap: 25px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    flex: auto;
+  }
+
+  .profile-photo {
+    width: 190px;
+    height: 190px;
+  }
+}
 
 .reveal.show {
     opacity: 1;
