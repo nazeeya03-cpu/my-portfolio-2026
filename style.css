@@ -176,89 +176,43 @@ header {
     margin-bottom: 0.5rem;
 }
 
-/* =========================
-   PROJECTS PAGE
-========================= */
-
-.projects {
-    max-width: 1100px;
-    margin: auto;
-    padding: 3rem 1.5rem;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.projects > p {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.project-card {
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.project-card h3 {
-    margin-bottom: 1rem;
-}
-
-.project-card p {
-    margin-bottom: 1rem;
-}
-
-.project-card .btn {
-    margin-top: 0.5rem;
-}
-
-/* =========================
-   SKILLS PAGE
-========================= */
-
-.skills {
-    max-width: 1100px;
-    margin: auto;
-    padding: 3rem 1.5rem;
-}
-
-.skills h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.skills > p {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.skills-container {
+/* Project Buttons */
+.project-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
-.skill-card {
-    padding: 1.5rem;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+.project-buttons .btn {
+    flex: 1;
     text-align: center;
+    min-width: 100px;
 }
 
-.skill-card h3 {
-    color: #2864e8;
-    margin-bottom: 0.8rem;
+/* Skill Progress Bars */
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    margin-top: 1rem;
+    overflow: hidden;
 }
+
+.skill-progress {
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 10px;
+}
+
+.skill-progress.html { width: 90%; }
+.skill-progress.css { width: 85%; }
+.skill-progress.javascript { width: 70%; }
+.skill-progress.java { width: 80%; }
+.skill-progress.python { width: 80%; }
+.skill-progress.c { width: 75%; }
+.skill-progress.cpp { width: 75%; }
 
 /* =========================
    CONTACT PAGE
