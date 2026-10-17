@@ -1014,6 +1014,46 @@ footer a:hover {
     height: 190px;
   }
 }
+/* DARK MODE */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .hero,
+body.dark-mode .hero-content,
+body.dark-mode .footer-content {
+    color: #ffffff;
+}
+
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode a {
+    color: inherit;
+}
+
+/* BACK TO TOP ARROW */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    background-color: deeppink;
+    color: white;
+}
 
 .reveal.show {
     opacity: 1;
